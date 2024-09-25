@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Title from './components/Title'
 import menu from './data'
-import { type MenuItem } from './data'
+import { type MenuItemType } from './data'
 import Menu from './components/Menu'
 
 function App() {
-	const [menuItems, setMenuItems] = useState<MenuItem[]>(menu)
+	const [menuItems, setMenuItems] = useState<MenuItemType[]>(menu)
 
 	return (
 		<main>

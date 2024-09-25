@@ -1,14 +1,19 @@
-import { type MenuItem } from '../data'
+import { type MenuItemType } from '../data'
+import MenuItem from './MenuItem'
 
 type MenuProps = {
-	items: MenuItem[]
+	items: MenuItemType[]
 }
 
 const Menu = ({ items }: MenuProps) => {
 	return (
 		<div className='section-center'>
 			{items.map(item => {
-				return <div>{item.title}</div>
+				return (
+					<div key={item.id}>
+						<MenuItem item={item} />
+					</div>
+				)
 			})}
 		</div>
 	)

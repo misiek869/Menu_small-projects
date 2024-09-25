@@ -1,4 +1,4 @@
-export type MenuItem = {
+export type MenuItemType = {
 	id: number
 	title: string
 	category: string
@@ -7,7 +7,7 @@ export type MenuItem = {
 	desc: string
 }
 
-const menu: MenuItem[] = [
+const menu: MenuItemType[] = [
 	{
 		id: 1,
 		title: 'buttermilk pancakes',
