@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Title = () => {
-	return <div></div>
+type TitleProps = {
+	text: string
+}
+
+const Title = ({ text }: TitleProps) => {
+	return <div>{text}</div>
 }
 
 export default Title
